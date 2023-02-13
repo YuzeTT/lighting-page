@@ -1,0 +1,23 @@
+---
+import { Icon } from 'astro-icon'
+export interface Props {
+	text: string
+  url: string
+  icon: string
+}
+
+const { text, url, icon } = Astro.props
+---
+
+<a href={url} class="
+  inline-flex items-center
+  text-md 
+  bg-zinc-100
+  rounded-md
+  py-2 px-4
+  no-underline
+  text-zinc-800"
+>
+  <Icon name={icon} class="w-5 mr-2" />
+  {text}
+</a>
