@@ -10,6 +10,11 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [solidJs(), tailwind(), mdx()]
+  integrations: [solidJs(), tailwind(), mdx()],
+  output: "server",
+  adapter: vercel()
 });
