@@ -3,17 +3,11 @@ import { Icon } from 'astro-icon'
 export interface Props {
 	text: string
   url: string
-  color: string
   icon: string
 }
 
-const { text, url, color, icon } = Astro.props
+const { text, url, icon } = Astro.props
 ---
-
-<a href={url} class={`
-  inline-flex items-center text-sm
-  font-bold px-1 py-0.5 border-3 text-zinc-800 no-underline`
-} style={`border-bottom: 2px solid ${color?color:'#0EA5E9'}`}>
-  <Icon name={icon} class="w-5 mr-1" />
-  {text}
-</a>
+<a href={url} class={`text-sm px-1 py-0.5 text-zinc-800 no-underline border-b-2 border-gray-300 hover:border-blue-500 transition-all h-5`}>
+  {icon?<Icon name={icon} class="w-5 mb-1 inline-block" v-if="icon" />:''}
+  {text}</a>

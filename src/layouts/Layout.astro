@@ -20,7 +20,7 @@ const { title, language, keywords, description } = Astro.props
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{ title }</title>
 	</head>
-	<body class="font-sans">
+	<body class="font-sans ">
 		<Header title={ title } />
 		<div class="p-4 max-w-3xl mx-auto">
 			<slot />
@@ -28,5 +28,6 @@ const { title, language, keywords, description } = Astro.props
 	</body>
 </html>
 <style is:global>
+@tailwind base;
 
 </style>
