@@ -1,0 +1,21 @@
+---
+import { Icon } from 'astro-icon'
+export interface Props {
+	title: string;
+	introduce: string;
+  icon: string;
+  url: string;
+}
+
+const { title, introduce, icon, url } = Astro.props;
+---
+
+<a href={ url } class="flex items-center gap-3 no-underline bg-zinc-50 hover:bg-zinc-100 transition px-3 py-2 rounded-md">
+  <div>
+    <Icon name={ icon } class="w-10 mb-1 inline-block" v-if="icon" />
+  </div>
+  <div>
+    <div class="text-zinc-800 text-xl font-bold">{ title }</div>
+    <div class="text-zinc-500 text-md">{ introduce }</div>
+  </div>
+</a>

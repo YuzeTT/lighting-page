@@ -1,5 +1,8 @@
 import TheLink from "./src/components/TheLink.astro";
 import LinkButton from "./src/components/LinkButton.astro";
+import CardTitle from "./src/components/CardTitle.astro";
+import TheGrid from "./src/components/TheGrid.astro";
+import ProjectCard from "./src/components/ProjectCard.astro";
 
 <h1 style="font-size: 3rem; margin-bottom: 1rem;">哇，大佬到访！</h1>
 <h2 style="font-size: 2rem; margin-top: 0em;">在下 <span style="color: #FF5E00">YuzeTT</span></h2>
@@ -20,3 +23,9 @@ import LinkButton from "./src/components/LinkButton.astro";
 <LinkButton text="Github" icon="logos:github-icon" />
 <LinkButton text="Github" icon="logos:github-icon" />
 <LinkButton text="Github" icon="logos:github-icon" /> */}
+
+<CardTitle title="项目" introduce="Project" />
+
+<TheGrid>
+  <ProjectCard icon="ri:github-fill" title="生光主页" introduce="就是本项目啦~" />
+</TheGrid>
