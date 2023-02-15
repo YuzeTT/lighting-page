@@ -1,13 +1,16 @@
 ---
 import Header from '../components/Header'
+import SupportCard from '../components/SupportCard.astro'
+import TheFooter from '../components/TheFooter.astro'
 export interface Props {
 	title: string
 	language: string
 	keywords: string
 	description: string
+	footer: string
 }
 
-const { title, language, keywords, description } = Astro.props
+const { title, language, keywords, description, footer } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -22,8 +25,10 @@ const { title, language, keywords, description } = Astro.props
 	</head>
 	<body class="font-sans ">
 		<Header title={ title } />
+		<SupportCard />
 		<div class="p-4 max-w-3xl mx-auto">
 			<slot />
+			<TheFooter text={ footer } />
 		</div>
 	</body>
 </html>

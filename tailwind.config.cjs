@@ -7,12 +7,4 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/typography'),
 	],
-	safelist: [
-		{
-      pattern: /border-(red|green|blue|pink)-(300|500)/,
-    },
-		{
-      pattern: /hover\:border-(red|green|blue|pink)-(300|500)/,
-    },
-	]
 }

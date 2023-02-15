@@ -4,6 +4,7 @@ const site = {
   description: 'YuzeTT, 个人开发者.', // 网站简介
   language: 'zh', // 网站语言（zh/en/...）
   name: 'YuzeTT', // 你的名称
+  footer: '2023-PRESENT © YuzeTT',
   urls: {
     github: 'https://github.com/YuzeTT', // Github链接（留空不显示）
   }

@@ -1,0 +1,12 @@
+---
+import TheLink from './TheLink.astro'
+export interface Props {
+	text: string
+}
+
+const { text } = Astro.props
+---
+<div class="mt-5 text-sm text-zinc-500">
+  { text }
+  <div class="mt-1">由 <TheLink icon="ri:external-link-line" url="https://github.com/YuzeTT/lighting-page" text="生光主页" /> 用爱驱动</div>
+</div>
